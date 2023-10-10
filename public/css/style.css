@@ -1,0 +1,164 @@
+li{
+    list-style: none;
+}
+
+nav{
+    grid-template-columns: 1fr 5fr;
+    padding: 1vw 2vw;
+    color: #5d5d5e;
+}
+
+nav .left{
+    gap: 2vw;
+    border-right: 0.1px solid gray;
+}
+
+nav .left h1{
+    color: crimson;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+nav .left img{
+    height: 5vw;
+}
+
+nav .right{
+    justify-self: right;
+    gap: 2vw;
+}
+
+nav .right img{
+    height: 2vw;
+}
+
+nav .right div{
+    gap: 0.7vw;
+    cursor: pointer;
+}
+
+#main{
+    min-height: 100vh;
+    background: url("../resources/bus.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: color-burn;
+    justify-content: space-around;
+}
+
+#main h1{
+    font-size: 4vw;
+}
+
+#main form{
+    margin-bottom: 6vw;
+    box-shadow: 0 0 10vw 1px black;
+}
+
+#main form div{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0 3vw;
+    background-color: white;
+}
+
+#main form div:last-child{
+    background-color: crimson;
+    transition: all ease 0.3s;
+}
+
+#main form div:last-child:hover{
+    background-color: rgb(245, 44, 84);
+}
+
+#main form .btn{
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#main form img{
+    height: 2vw;
+}
+
+#main form input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2vw;
+    width: 100%;
+    height: 4.5vw;
+    padding-left: 1.5vw;
+    transition: all ease 0.2s;
+}
+
+#main form input:focus{
+    background-color: #b2b2b379;
+}
+
+footer{
+    min-height: 60vh;
+    padding: 2vw 6vw;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    color: #5d5d5e;
+    gap: 1vw;
+}
+
+footer .top-left{
+    align-items: flex-start;
+    width: 75%;
+    line-height: 1.8;
+    /* box-shadow: 0 0 20px 1px rebeccapurple; */
+    padding: 0 2vw;
+}
+
+footer .top-left .logo{
+    gap: 2vw;
+}
+
+footer .top-left .logo img{
+    height: 5vw;
+}
+
+footer .top-left .logo h1{
+    color: crimson;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+footer .top-right{
+    justify-self: right;
+    width: 75%;
+    gap: 2vw;
+    /* box-shadow: 0 0 20px 1px crimson; */
+}
+
+footer .top-right h3{
+    font-size: 1.8vw;
+    color: crimson;
+}
+
+footer .top-right ul{
+    gap: 1vw;
+    font-size: 1.1vw;
+}
+
+footer .bottom {
+    border-top: 0.2px solid black;
+    padding: 0.5vw 0;
+    grid-column: span 2;
+}
+
+footer .bottom .social{
+    gap: 1vw;
+}
+
+footer .bottom .social img{
+    height: 2vw;
+    cursor: pointer;
+}

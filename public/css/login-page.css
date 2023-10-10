@@ -1,0 +1,92 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url("../resources/bus2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+
+#main{
+    height: 80vh;
+    width: 70vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main .right{
+    background: linear-gradient(to bottom, #FF6969, #F31559);
+    color: white;
+    gap: 1.5vw;
+}
+
+#main .right h1{
+    font-size: 3vw;
+}
+#main .right h3{
+    font-size: 1.5vw;
+}
+#main .right button{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border: none;
+    border: 0.1px solid white;
+    padding: 0.5vw 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+#main .right button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#main .left{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 3vw;
+    gap: 7vw;
+}
+
+#main .left .top{
+    border-bottom: 0.2px solid black;
+    padding-bottom: 1vw;
+}
+
+#main .left .social img{
+    height: 1.8vw;
+    cursor: pointer;
+    margin: 0 1vw;
+}
+
+#main .left form{
+    text-transform: uppercase;
+    gap: 1vw;
+}
+
+#main .left form input{
+    padding: 0.6vw 1.3vw;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.3vw;
+    transition: all ease 0.2s;
+}
+
+#main .left form input:not(#t-c){
+    width: 75%;
+}
+
+#main .left form input:focus{
+    background-color: white;
+}
+
+#main .left form .btn{
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 1vw 0;
+    background: linear-gradient(to right, #FF6969, #F31559);
+    color: white;
+}

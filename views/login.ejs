@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login-page.css">
+    <link rel="shortcut icon" href="../resources/logo.ico" type="image/x-icon">
+</head>
+<body class="f-1 flex justify-center align-center">
+    <div id="main" class="grid">
+        <div class="left flex-col">
+            <div class="top flex space-between">
+                <h2 id="title">Sign In</h2>
+                <div class="social">
+                    <img src="../resources/ig.svg" alt="">
+                    <img src="../resources/x.svg" alt="">
+                </div>
+            </div>
+            <form action="/submit-details" method="post" class="flex-col">
+                <div>
+                    <label for="uname">username</label>
+                </div>
+                <div>
+                    <input type="text" id="uname" name="uname" required>
+                </div>
+                <div>
+                    <label for="pass">password</label>
+                </div>
+                <div><input type="password" name="pass" id="pass" required></div>
+                <div>
+                    <input type="submit" value="Sign In" class="btn">
+                </div>
+                <div>
+                    <input type="checkbox" name="t-c" id="t-c" checked>
+                    <label for="t-c">T&C</label>
+                </div>
+            </form>
+        </div>
+        <div class="right flex-col justify-center align-center">
+            <h1>Welcome to Login</h1>
+            <h3>Don't have an account?</h3>
+            <button id="signup">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="../js/login-page-script.js"></script>
+</body>
+</html>
