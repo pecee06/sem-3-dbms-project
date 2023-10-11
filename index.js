@@ -27,6 +27,11 @@ app.post("/submit-details",(req,res)=>{
     res.render("index");
 });
 
+app.post("/search",(req,res)=>{
+    console.log(req.body);
+    res.send("Next page");
+});
+
 const port = 3000;
 app.listen(port,()=>{
     console.log("Listening at localhost:3000");
