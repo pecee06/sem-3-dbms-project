@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tickets</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/ticket-page.css">
+</head>
+<body class="f-1">
+    <h1>Available Tickets</h1>
+    <div class="container">
+        <div>
+            <span>MP04AB7861</span>
+            <span>10:00</span>
+        </div>
+        <div>
+            <span>MP04AB4069</span>
+            <span>13:00</span>
+        </div>
+        <div>
+            <span>MP04AB0817</span>
+            <span>17:00</span>
+        </div>
+        <div>
+            <span>MP04AB3945</span>
+            <span>22:00</span>
+        </div>
+    </div>
+
+    <script>
+        let t = document.querySelectorAll(".container div");
+        t.forEach(element => {
+            element.addEventListener("click",()=>{
+                alert("Ticket booked");
+            })
+        });
+    </script>
+</body>
+</html>

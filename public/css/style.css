@@ -1,3 +1,7 @@
+:root{
+    --theme-clr: crimson;
+}
+
 li{
     list-style: none;
 }
@@ -140,7 +144,7 @@ footer .top-right{
 
 footer .top-right h3{
     font-size: 1.8vw;
-    color: crimson;
+    color: var(--theme-clr);
 }
 
 footer .top-right ul{

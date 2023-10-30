@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import {insert} from './db.js';
 
 const app = express();
 app.set("view engine","ejs");
@@ -24,12 +25,12 @@ app.get("/login",(req,res)=>{
 
 app.post("/submit-details",(req,res)=>{
     console.log(req.body);
+    insert(req.body);
     res.render("index");
 });
 
 app.post("/search",(req,res)=>{
-    console.log(req.body);
-    res.send("Next page");
+    res.render("tickets");
 });
 
 const port = 3000;
