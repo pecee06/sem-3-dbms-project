@@ -10,31 +10,9 @@
 <body class="f-1">
     <h1>Available Tickets</h1>
     <div class="container">
-        <div>
-            <span>MP04AB7861</span>
-            <span>10:00</span>
-        </div>
-        <div>
-            <span>MP04AB4069</span>
-            <span>13:00</span>
-        </div>
-        <div>
-            <span>MP04AB0817</span>
-            <span>17:00</span>
-        </div>
-        <div>
-            <span>MP04AB3945</span>
-            <span>22:00</span>
-        </div>
     </div>
 
-    <script>
-        let t = document.querySelectorAll(".container div");
-        t.forEach(element => {
-            element.addEventListener("click",()=>{
-                alert("Ticket booked");
-            })
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../js/tickets-script.js"></script>
 </body>
 </html>

@@ -3,13 +3,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     min-height: 100vh;
     background: url("../resources/bus3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: color-burn;
     justify-content: space-around;
 }
@@ -17,6 +17,17 @@ body{
 h1{
     font-size: 5vw;
     color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1::after{
+    content: "AvailableTickets";
+    text-transform: uppercase;
+    position: absolute;
+    left: 8px;
+    color: black;
+    z-index: -1;
 }
 
 .container{
@@ -37,4 +48,5 @@ h1{
 
 .container div:hover{
     background-color: rgba(0, 0, 0, 0.1);
+    color: white;
 }
